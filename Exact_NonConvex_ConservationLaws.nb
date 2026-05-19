@@ -10,16 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14671,        398]
-NotebookOptionsPosition[     14054,        372]
-NotebookOutlinePosition[     14426,        388]
-CellTagsIndexPosition[     14383,        385]
+NotebookDataLength[     15935,        422]
+NotebookOptionsPosition[     14845,        395]
+NotebookOutlinePosition[     15297,        412]
+CellTagsIndexPosition[     15254,        409]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[TextData[{
  StyleBox["The Solution of  ",
   FontSize->36,
@@ -29,7 +27,8 @@ Cell[TextData[{
   FormBox[
    SubscriptBox["u", "t"], TraditionalForm]],
   FontWeight->"Bold",
-  FontColor->RGBColor[0., 0., 0.6274509803921569]],
+  FontColor->RGBColor[0., 0., 0.6274509803921569],ExpressionUUID->
+  "37cea5d1-b665-419a-864d-eb63edd00583"],
  StyleBox[" ",
   FontColor->RGBColor[0., 0., 0.6274509803921569]],
  StyleBox["+ ",
@@ -43,7 +42,8 @@ Cell[TextData[{
      RowBox[{"f", 
       RowBox[{"(", "u", ")"}]}], ")"}], "x"], TraditionalForm]],
   FontWeight->"Bold",
-  FontColor->RGBColor[0., 0., 0.6274509803921569]],
+  FontColor->RGBColor[0., 0., 0.6274509803921569],ExpressionUUID->
+  "8960b6af-ea6e-4a11-b293-c6aaa14c4182"],
  StyleBox["=0 with the Riemann data ",
   FontSize->36,
   FontWeight->"Bold",
@@ -61,7 +61,8 @@ Cell[TextData[{
         RowBox[{"x", " ", "\[GreaterEqual]", " ", "0"}]}
       }]}]}], TraditionalForm]],
   FontWeight->"Bold",
-  FontColor->RGBColor[0., 0., 0.6274509803921569]],
+  FontColor->RGBColor[0., 0., 0.6274509803921569],ExpressionUUID->
+  "6cba4590-cd1a-4ae7-891c-710f9847d50d"],
  "\n",
  StyleBox["The exact solution is calculated using the article by Osher which \
 is available here: \
@@ -76,7 +77,7 @@ Hyperbolic Problems\[CloseCurlyDoubleQuote] By LeVeque.",
   FontColor->RGBColor[0, 0, 1]],
  StyleBox[" ",
   FontSize->16]
-}], "Title",
+}], "Subsection",
  CellChangeTimes->{
   3.689603923061133*^9, {3.689603985781354*^9, 3.689603989705963*^9}, {
    3.6896353493311*^9, 3.689635380274621*^9}, 3.6896354620576367`*^9, {
@@ -85,16 +86,19 @@ Hyperbolic Problems\[CloseCurlyDoubleQuote] By LeVeque.",
    3.6896371720405993`*^9, {3.6896373343010864`*^9, 3.689637388984241*^9}, {
    3.689637464757461*^9, 3.6896375131172323`*^9}, {3.6896375757115803`*^9, 
    3.689637577832802*^9}},
- TextAlignment->Center],
+ TextAlignment->Center,ExpressionUUID->"5ada4a12-501b-4883-8335-666730ec4223"],
+
+Cell[CellGroupData[{
 
 Cell["\<\
 Biswarup Biswas
-Thanx me here: biswarupb7@gmail.com\
+biswarupb7@gmail.com\
 \>", "Subtitle",
  CellChangeTimes->{{3.6896376357840905`*^9, 3.6896376402651677`*^9}, {
-  3.689637683015586*^9, 3.689637683579494*^9}, {3.6896377967177153`*^9, 
-  3.6896378624124627`*^9}},
- TextAlignment->Center],
+   3.689637683015586*^9, 3.689637683579494*^9}, {3.6896377967177153`*^9, 
+   3.6896378624124627`*^9}, {3.988149884418034*^9, 3.988149885212171*^9}, 
+   3.98814998169706*^9},
+ TextAlignment->Center,ExpressionUUID->"6651df57-20d3-4053-af4d-327416c96725"],
 
 Cell[CellGroupData[{
 
@@ -103,7 +107,9 @@ By using this code one can get the analytic solution of known scalar Riemann \
 problems for conservation laws.\
 \>", "Subsection",
  CellChangeTimes->{{3.68963723255616*^9, 3.6896372843500943`*^9}, 
-   3.6896373289870567`*^9, {3.689637727266587*^9, 3.6896377327767344`*^9}}],
+   3.6896373289870567`*^9, {3.689637727266587*^9, 
+   3.6896377327767344`*^9}},ExpressionUUID->"189eb4ca-01e4-49e3-9e98-\
+509adafc867d"],
 
 Cell[BoxData[{
  RowBox[{
@@ -119,11 +125,13 @@ Cell[BoxData[{
     FractionBox["\[Pi]", "4"]}], ";", 
    RowBox[{"uR", "=", 
     FractionBox[
-     RowBox[{"15", " ", "\[Pi]"}], "4"]}], ";", " ", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-     RowBox[{"Note", " ", "that", " ", "uL"}], " ", "<", " ", "uR"}], " ", 
-    "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"15", " ", "\[Pi]"}], "4"]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Note", " ", "that", " ", "uL"}], " ", "<", " ", "uR"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
    RowBox[{
     RowBox[{"f", "[", "v_", "]"}], ":=", 
     RowBox[{"Sin", "[", "v", "]"}]}], ";"}], " ", 
@@ -155,19 +163,25 @@ Cell[BoxData[{
    RowBox[{"Define", " ", "flux", " ", "here"}], " ", 
    "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Ngrid", "=", "100"}], ";", 
+  RowBox[{
+   RowBox[{"Ngrid", "=", "100"}], ";"}], 
   RowBox[{"(*", " ", 
-   RowBox[{"Define", " ", "grid", " ", "number", " ", "here"}], " ", "*)"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"dx", "=", 
-   FractionBox[
-    RowBox[{"xR", "-", "xL"}], 
-    RowBox[{"Ngrid", "-", "1"}]]}], ";", " ", 
+   RowBox[{"Define", " ", "grid", " ", "number", " ", "here"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dx", "=", 
+    FractionBox[
+     RowBox[{"xR", "-", "xL"}], 
+     RowBox[{"Ngrid", "-", "1"}]]}], ";"}], " ", 
   RowBox[{"(*", " ", 
-   RowBox[{"Mesh", " ", "size"}], " ", "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"t", "=", "1"}], ";", " ", 
+   RowBox[{"Mesh", " ", "size"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"t", "=", "1"}], ";"}], " ", 
   RowBox[{"(*", " ", 
-   RowBox[{"The", " ", "time"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"The", " ", "time"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"For", "[", 
    RowBox[{
     RowBox[{"i", "=", "1"}], ",", 
@@ -181,22 +195,23 @@ Cell[BoxData[{
         RowBox[{"i", "-", "1"}], ")"}], "dx"}]}]}]}], " ", "]"}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"uexact", "=", 
-   RowBox[{"Table", "[", " ", 
-    RowBox[{
-     RowBox[{"ArgMin", "[", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
+  RowBox[{
+   RowBox[{"uexact", "=", 
+    RowBox[{"Table", "[", " ", 
+     RowBox[{
+      RowBox[{"ArgMin", "[", 
+       RowBox[{
+        RowBox[{"{", 
          RowBox[{
-          RowBox[{"f", "[", "v", "]"}], "-", 
           RowBox[{
-           FractionBox[
-            RowBox[{"xgrid", "[", "i", "]"}], "t"], " ", "v"}]}], ",", " ", 
-         RowBox[{"uL", "\[LessEqual]", "v", "\[LessEqual]", "uR"}]}], "}"}], 
-       ",", "v"}], "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"i", ",", "1", ",", "Ngrid"}], "}"}]}], "]"}]}], ";", 
+           RowBox[{"f", "[", "v", "]"}], "-", 
+           RowBox[{
+            FractionBox[
+             RowBox[{"xgrid", "[", "i", "]"}], "t"], " ", "v"}]}], ",", " ", 
+          RowBox[{"uL", "\[LessEqual]", "v", "\[LessEqual]", "uR"}]}], "}"}], 
+        ",", "v"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "1", ",", "Ngrid"}], "}"}]}], "]"}]}], ";"}], 
   RowBox[{"(*", " ", 
    RowBox[{
     RowBox[{
@@ -230,7 +245,8 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{
     "This", " ", "is", " ", "the", " ", "case", " ", "when", " ", "uL"}], " ",
-     "\[GreaterEqual]", " ", "uR"}], " ", "*)"}], "\[IndentingNewLine]", 
+     "\[GreaterEqual]", " ", "uR"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"x", "=", 
    RowBox[{"Array", "[", 
     RowBox[{"xgrid", ",", "Ngrid"}], "]"}]}], ";"}]}], "Input",
@@ -260,7 +276,9 @@ Cell[BoxData[{
    3.6896365078648453`*^9}, {3.6896365906546783`*^9, 
    3.6896365909711323`*^9}, {3.6896367063997993`*^9, 3.689636806012602*^9}, 
    3.689636919287011*^9, {3.689638081070327*^9, 3.6896380859175863`*^9}, {
-   3.689638116735851*^9, 3.689638123950068*^9}}],
+   3.689638116735851*^9, 
+   3.689638123950068*^9}},ExpressionUUID->"6a70d9ee-21b5-4ab9-95ce-\
+342f0fe28d3e"],
 
 Cell[CellGroupData[{
 
@@ -284,7 +302,8 @@ Cell[BoxData[
    3.689590238270957*^9}, {3.6895902716391373`*^9, 3.6895902745273013`*^9}, {
    3.689591619010174*^9, 3.689591643216906*^9}, {3.6895917319686155`*^9, 
    3.689591734624505*^9}, 3.689636529939294*^9, {3.689636641613477*^9, 
-   3.689636646354254*^9}}],
+   3.689636646354254*^9}},ExpressionUUID->"c068e870-e38d-460d-9a84-\
+e3b2510bb840"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, {}, 
@@ -347,7 +366,9 @@ YPY9EMy+F4L/BwfP8kk=
      Scaled[0.02], 
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.689636973076808*^9}]
+ CellChangeTimes->{
+  3.689636973076808*^9},ExpressionUUID->"006ab635-04c2-4bb0-8337-\
+deaa0ccbff54"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -366,15 +387,18 @@ Cell[BoxData[
  CellChangeTimes->{{3.6895911417000012`*^9, 3.6895912016977925`*^9}, {
    3.689591234488676*^9, 3.6895912367953176`*^9}, {3.689591646976581*^9, 
    3.6895916630245*^9}, {3.6895917403205776`*^9, 3.689591741257244*^9}, 
-   3.689603135384735*^9, 3.689636653718765*^9}]
+   3.689603135384735*^9, 
+   3.689636653718765*^9},ExpressionUUID->"08f4bbe8-44e0-42e3-968a-\
+de5bbf52379c"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1904, 997},
-WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+WindowSize->{1063.3846153846155`, 553.2923076923076},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 Magnification:>1.6 Inherited,
-FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
-StyleDefinitions->"Default.nb"
+FrontEndVersion->"13.2 for Linux x86 (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"68a79d65-cabf-419d-a9d0-1932c9b4c6b2"
 ]
 (* End of Notebook Content *)
 
@@ -387,17 +411,17 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 2439, 68, 326, "Subsection",ExpressionUUID->"5ada4a12-501b-4883-8335-666730ec4223"],
 Cell[CellGroupData[{
-Cell[580, 22, 2205, 65, 404, "Title"],
-Cell[2788, 89, 275, 7, 141, "Subtitle"],
+Cell[3022, 92, 388, 8, 134, "Subtitle",ExpressionUUID->"6651df57-20d3-4053-af4d-327416c96725"],
 Cell[CellGroupData[{
-Cell[3088, 100, 283, 5, 77, "Subsection"],
-Cell[3374, 107, 6199, 155, 519, "Input"],
+Cell[3435, 104, 344, 7, 128, "Subsection",ExpressionUUID->"189eb4ca-01e4-49e3-9e98-509adafc867d"],
+Cell[3782, 113, 6404, 167, 619, "Input",ExpressionUUID->"6a70d9ee-21b5-4ab9-95ce-342f0fe28d3e"],
 Cell[CellGroupData[{
-Cell[9598, 266, 898, 20, 48, "Input"],
-Cell[10499, 288, 2845, 61, 417, "Output"]
+Cell[10211, 284, 955, 21, 117, "Input",ExpressionUUID->"c068e870-e38d-460d-9a84-e3b2510bb840"],
+Cell[11169, 307, 2905, 63, 418, "Output",ExpressionUUID->"006ab635-04c2-4bb0-8337-deaa0ccbff54"]
 }, Open  ]],
-Cell[13359, 352, 667, 16, 76, "Input"]
+Cell[14089, 373, 728, 18, 83, "Input",ExpressionUUID->"08f4bbe8-44e0-42e3-968a-de5bbf52379c"]
 }, Open  ]]
 }, Open  ]]
 }
